@@ -1,7 +1,360 @@
-body{
-   background: blue;
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+*{
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+nav img { position: relative;
+    top: 0px;
+    align-self: center;
+    
+    
 }
 
-span {
-    background: red
+/* ================= Nav ================= */
+
+
+nav.flexbox{
+    justify-content: space-around;
+    padding: 1.5% 0;
+}
+.bolt{
+    background-color: #E63C2E;
+}
+a{
+    border-style:solid;
+    background-color: #F6CA11;
+    border-width: 0px;
+    color: black;
+        padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    
+}
+/* ================= Main ================= */
+
+section.gallery {
+ 
+    flex-flow: row!important;
+    flex-wrap: wrap!important;
+}
+
+section.gallery2-container{
+    width: 100%!important;
+}
+
+
+section .gallery2 {
+ 
+    flex-flow: row!important;
+    flex-wrap: wrap!important;
+    width: 100%!important;
+    margin: 5% 2.5%;
+}
+
+section .gallery2 img{
+    width: 20%;
+    height: auto;
+}
+
+
+.gallery img{
+    width: 50%;
+ padding: 1% 1%;
+  
+}
+
+.flexbox{
+    display: flex;
+}
+
+main.flexbox header,
+main.flexbox section{    
+    width: 50%;
+    
+}
+
+main.flexbox section{
+ 
+    flex-flow: column;
+    justify-content: space-around;
+ 
+}
+
+main.flexbox section aside p{
+    margin: 5% 0;
+    position: relative;
+  
+}
+.portfolio{
+ margin: 5% 2.5%;
+    background-color: #6ACDB1;
+}
+.para{
+ margin: 5% 2.5%;
+    background-color: white;
+    padding: 2%;
+}
+main.flexbox section article h1{
+    position: relative;
+    top:  0px;
+    justify-content: space-around
+}
+main.flexbox section article p{
+    position: relative;
+top:50px;
+}
+
+    nav.flexbox a:nth-child(even){
+       display: block;
+ transform: rotate(5deg);
+ 
+    }
+
+    nav.flexbox a:nth-child(odd){
+       display: block;
+ transform: rotate(-5deg);
+ 
+    }
+
+
+
+main.flexbox section article h2{
+     position: relative;
+    top: 10px;
+}
+
+main.flexbox header img{
+    display: block;
+    margin: auto;
+}
+
+main.flexbox h1{
+ margin: 2.5% 0;
+}
+
+
+.projectheader{
+ 
+  
+    background-color: #FD8204;
+   
+}
+
+
+
+
+ .yike{
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: static;
+     text-align: center;
+}
+
+.yike h1{
+ margin: 5% auto;
+}
+
+
+h3{
+    color:#E63C2E;
+}
+.yikes {
+    background-color:black;
+    color:#E63C2E;
+    padding: 16px;
+  
+}
+.op{
+    background-color: white;
+    margin: 2.5%;
+    padding: 16px;
+}
+.return{
+    position: relative;
+    top:400px;
+    right:1000;
+}
+
+.about-container div{
+    width: 50%;
+}
+
+.about{
+    background-color: #FD8204;
+    padding: 4%;
+    margin: 5% 2%;
+    height: 5%
+}
+.coms{
+margin: 5% 2%;
+    background-color: #6ACDB1;
+    bottom: -8px;
+}
+.bio{
+    margin;5% 5%;
+    padding: 2%
+
+    
+}
+.me{
+    
+    width:100%;
+    height:auto;
+ padding: 5%;
+}
+.social{
+    padding: 20%;
+    margin: 5% 5%;
+}
+.soc{
+    margin: 5% 2%;
+    background-color: #6ACDB1;
+}
+/* ================= Media Query Main ================= */
+
+
+@media only screen and (max-width: 1000px) {
+    main.flexbox{
+    display: flex;
+        flex-flow: column;
+}
+    main.flexbox header,
+main.flexbox section{
+    
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+    
+  nav.flexbox{
+  flex-flow: column;
+   
+}
+    
+    nav.flexbox a{
+        margin: 1% 5%;
+    }
+    
+    
+        nav.flexbox a:nth-child(even){
+       display: block;
+ transform: rotate(1deg);
+ 
+    }
+
+    nav.flexbox a:nth-child(odd){
+       display: block;
+ transform: rotate(-1deg);
+ 
+    }
+
+  
+    
+}
+    
+/* ================= End Main ================= */
+
+
+
+
+
+
+
+
+p.updown{
+    background-color: #6ACDB1;
+    color:BLACK;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    background-color: #E63C2E;
+}
+
+
+main {
+    background-color: white;
+}
+
+section{
+    background-color: #385CAE;
+ 
+    height: auto;}
+
+h1{
+    border-style: solid;
+    background-color: #F6CA11;
+    border-color:black;
+    color:black;
+    padding:20px;
+
+}
+.ab{
+    width:550px;
+    margin:5% 2%!important;
+}
+.comh1{
+    width:550px;
+    margin:5% 2%!important;
+}
+.abouth1{
+     width:550px;
+    margin:5% 2%!important;
+}
+.socialh1{
+     width:550px;
+    margin:5% 2%!important;
+}
+.projh1{
+    width:550px;
+    margin:5% 2%!important; 
+}
+h2{
+    padding: 55px;
+    border-style: solid;
+    background-color:#E63C2E ;
+    border-color: #E63C2E;
+    margin: 2.5% 0;
+    
+}
+
+footer{
+    background:#E63C2E ;
+}
+
+footer img{
+    width: 50px;
+    height: auto;
+}
+
+article{
+    color:#F6CA11;
+    text-align: right;
+}
+   
+
+article p{
+    color:#F6CA11;
+}
+
+aside p{
+    color: BLACK;
+}
+
+aside p {
+    background-color: #FD8204;
+
+}  
+p img{
+    width:150px;
+    height:auto;
 }
